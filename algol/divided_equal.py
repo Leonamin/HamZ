@@ -3,7 +3,7 @@ def divideEqual(entireCount, targetCount):
     startIndex = 0  
 
     for i in range(targetCount):
-        endIndex = (i + 1) * entireCount // targetCount
+        endIndex = (i + 1) * entireCount // targetCount - 1
 
         li.append((startIndex, endIndex))
 
@@ -17,4 +17,6 @@ if __name__ == "__main__":
     print(divideEqual(31, 5))
     print(divideEqual(32, 5))
     print(divideEqual(33, 5))
+    print(divideEqual(7, 7))
+
 
